@@ -298,8 +298,8 @@ section {
     }
   }
 
-  /************ WHAT WE OFFER SECTION ************/
-  &.whatWeOffer {
+  /************ WHAT WE DO SECTION ************/
+  &.whatWeDo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -340,77 +340,149 @@ section {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
 
         .service {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          min-height: 70px;
           background-image: linear-gradient(135deg, #f5f7fa 0%, #e2d4d4 100%);
           width: 70vw;
-          border-style: solid;
-          border-width: 1px;
-          border-color: rgba(18, 18, 18, 0.7);
           padding: 5vw;
-          border-radius: 5px;
-          margin: 5vw;
+          margin: 2vw;
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           transition: 0.3s;
+
+          h3 {
+            font-size: 2em;
+          }
+          p {
+            font-size: 1em;
+            margin: 0 auto;
+          }
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 880px) {
           flex-direction: row;
           flex-wrap: wrap;
           justify-content: center;
 
           .service {
-            width: 35vw;
-            height: 35vw;
-            margin: 1vw;
-            padding: 2vw;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: none;
-            justify-content: center;
-            align-items: center;
-
-            p {
-              font-size: 1em;
-            }
-            img {
-              max-height: 50px;
-              max-width: 50px;
-            }
+            width: 33vw;
+            padding: 3vw;
+            min-height: 140px;
           }
         }
-
         @media (min-width: 1200px) {
-          flex-direction: row;
-          flex-wrap: nowrap;
-          justify-content: center;
-
           .service {
-            width: 22vw;
-            height: 22vw;
-            margin: 0.5vw;
-            padding: 0.5vw;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-items: center;
+            padding: 2vw;
+          }
+        }
+        @media (min-width: 1332px) {
+          .service {
+            width: 20vw;
+          }
+        }
+        @media (min-width: 1800px) {
+          .service {
+            width: 18vw;
+          }
+        }
+      }
+    }
+  }
 
-            p {
-              font-size: 1em;
+  /************ THE PROCESS SECTION **************/
+  &.theProcess {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    background: linear-gradient(
+      82deg,
+      rgba(34, 34, 34, 1) 0%,
+      rgba(18, 18, 18, 1) 100%
+    );
+    background-position: top;
+    background-size: cover;
+
+    .container {
+      align-content: center;
+      margin: 5vw;
+      //max-width: $containerFixedW;
+
+      h2 {
+        color: #e0dfdc;
+        letter-spacing: 0.1em;
+        text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c,
+          0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424,
+          0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c,
+          0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414,
+          0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+        font-size: 3em;
+
+        @media (min-width: 768px) {
+          font-size: 4em;
+        }
+        @media (min-width: 1000px) {
+          font-size: 5em;
+        }
+      }
+
+      p {
+        font-size: 1em;
+        @media (min-width: 768px) {
+          font-size: 1.5em;
+        }
+        @media (min-width: 1000px) {
+          font-size: 1.5em;
+        }
+      }
+
+      .exampleCards {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        max-width: $containerFixedW;
+
+        .exampleCard {
+          width: 75vw;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+          background-color: #161616;
+          margin: 2vw;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          max-width: 600px;
+
+          .exampleText {
+            align-items: center;
+            padding: 2vw;
+
+            h3 {
+              margin: 0.5vw;
+              font-size: 2em;
             }
+          }
+
+          .image {
             img {
-              max-height: 50px;
-              max-width: 50px;
+              width: 100%;
             }
           }
         }
-        @media (min-width: 1500px) {
-          .service {
-            p {
-              font-size: 1em;
-              padding: 25px;
-            }
+        @media (min-width: 1050px) {
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: center;
+          .exampleCard {
+            width: 40vw;
           }
         }
       }
