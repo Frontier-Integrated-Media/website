@@ -1,5 +1,5 @@
 // Get Subscribers
-const youtubeKey = "AIzaSyB1CLllpJ2zLOVCRbSpzAWnspFfozPUCOc"; // Cam API Key
+const youtubeKey = ""; // API Key
 const youtubeUserFront = "UCFHhnyA9HGtBxGhtMQ_FEpQ"; // The Front
 const youtubeUserJack = "UCNfGpi7cu6I3vGLUS77MygQ"; // Relax Jack
 const youtubeUserBraved = "UCXMGMrypItN1a1seNlydqng"; // The Braved
