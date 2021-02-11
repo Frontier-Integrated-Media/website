@@ -230,8 +230,8 @@ section.welcomeStats {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(82deg, #222222 0%, #121212 100%);
-  background-position: top;
+  background-image: url(../../img/whoWeAre_screen.jpg);
+  background-position: center;
   background-size: cover;
   text-align: center;
   width: 100%;
@@ -256,10 +256,10 @@ section.welcomeStats .container .statsContainer .statsCard {
 }
 section.welcomeStats .container .odometer {
   font-size: 1.75em;
-  color: #2fe66c;
+  color: #ffffff;
   background-color: linear-gradient(82deg, #222222 0%, #121212 100%);
   letter-spacing: 0.1em;
-  text-shadow: 0 -1px 0 #05ff3b, 0 1px 0 #242424, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212;
+  text-shadow: 0 -1px 0 white, 0 1px 0 #242424, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212;
 }
 @media (min-width: 768px) {
   section.welcomeStats .container .odometer {
@@ -312,6 +312,11 @@ section.whatWeDo .container p {
   section.whatWeDo .container p {
     font-size: 1.5em;
   }
+}
+section.whatWeDo .container a {
+  color: #981b2d;
+  text-decoration: none;
+  font-weight: 400;
 }
 section.whatWeDo .container .serviceCards {
   position: relative;
@@ -464,6 +469,7 @@ section.ourCreations {
 section.ourCreations .container {
   align-content: center;
   max-width: 1590px;
+  margin: 5vw;
 }
 section.ourCreations .container h2 {
   color: #e0dfdc;
@@ -497,6 +503,11 @@ section.ourCreations .container .creationVideos .creationVideoCard a {
   color: #e0dfdc;
 }
 section.ourCreations .container .creationVideos .creationVideoCard video {
+  margin-top: 1vw;
+  width: 75%;
+}
+section.ourCreations .container .creationVideos .creationVideoCard img {
+  margin-top: 1vw;
   width: 75%;
 }
 section.meetTheTeam {

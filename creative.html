@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Frontier Media &mdash; Creative</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="style/css/normalize.css" />
+    <link rel="stylesheet" href="style/css/main.css" />
+    <link rel="stylesheet" href="style/css/primary.css" />
+    <link rel="stylesheet" href="style/css/odometer-theme-default.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" />
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!-- NAVIGATION SECTION -->
+    <section class="nav">
+      <div class="container">
+        <!-- Side Nav -->
+        <div id="mySideNav" class="sideNav">
+          <!-- The "onclick" is a javascript activiation. It closes the mobile side nav. -->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <div>
+            <a href="https://frontier-integrated-media.github.io/website#home" onclick="closeNav()">HOME</a>
+            <a href="https://frontier-integrated-media.github.io/website#about" onclick="closeNav()">ABOUT</a>
+            <a href="https://frontier-integrated-media.github.io/website#services" onclick="closeNav()">SERVICES</a>
+            <a href="https://frontier-integrated-media.github.io/website#team" onclick="closeNav()">TEAM</a>
+            <a href="https://frontier-integrated-media.github.io/website#contact" onclick="closeNav()">CONTACT</a>
+            <a href="https://frontier-integrated-media.github.io/website/creative.html" onclick="closeNav()">CREATIVE</a>
+          </div>
+        </div>
+
+        <h3 class="logo">FRONTIER MEDIA</h3>
+        <!-- The #example format are for "id's". These are needed so that they can act as anchors for the nav bar. So if a user hits any of these options, it will look for the id="X" on the page and jump to it. -->
+        <div class="navContent">
+          <a href="https://frontier-integrated-media.github.io/website#home">HOME</a>
+          <a href="https://frontier-integrated-media.github.io/website#about">ABOUT</a>
+          <a href="https://frontier-integrated-media.github.io/website#services">SERVICES</a>
+          <a href="https://frontier-integrated-media.github.io/website#team">TEAM</a>
+          <a href="https://frontier-integrated-media.github.io/website#contact">CONTACT</a>
+          <a href="https://frontier-integrated-media.github.io/website/creative.html">CREATIVE</a>
+        </div>
+        <span
+          class="openNavbtn"
+          style="font-size: 30px; cursor: pointer"
+          onclick="openNav()"
+          >&#9776;</span
+        >
+      </div>
+    </section>
+
+    <!-- LANDING PAGE SECTION -->
+    <section id="home" class="landing">
+      <div class="container">
+        <!-- data-aos information is in the READ.MD or on the github page -->
+        <h1 data-aos="fade-up" data-aos-duration="2000">FRONTIER MEDIA</h1>
+        <p data-aos="fade-up" data-aos-duration="2300" id="subTitle">
+          Media Production & Marketing
+        </p>
+      </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="welcomeStats">
+      <div class="container">
+        <!--h2>Welcome to Frontier Media</h2-->
+        <div class="statsContainer">
+          <div class="statCard">
+            <h3 id="channelOdometer" class="odometer">0</h3>
+            <p>CHANNELS</p>
+          </div>
+          <div class="statsCard">
+            <h3 id="viewOdometer" class="odometer">000000000</h3>
+            <p>VIEWS</p>
+          </div>
+          <div class="statsCard">
+            <h3 id="subOdometer" class="odometer">000000</h3>
+            <p>SUBSCRIBERS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR CREATIONS SECTION -->
+    <section class="ourCreations">
+      <div class="container">
+        <h2>OUR CREATIONS</h2>
+
+        <div class="creationVideos">
+          <div class="creationVideoCard">
+            <a
+              href="https://www.youtube.com/channel/UCFHhnyA9HGtBxGhtMQ_FEpQ"
+              target="_blank"
+            >
+              <h3>The Front</h3>
+              <video playsinline autoplay muted loop>
+                <source src="img/theFront.mp4" type="video/mp4" />
+              </video>
+            </a>
+          </div>
+
+          <div class="creationVideoCard">
+            <a
+              href="https://www.youtube.com/channel/UC8gT5G2ktLGoHlLm33EwOsA"
+              target="_blank"
+            >
+              <h3>Geetsly's</h3>
+              <video playsinline autoplay muted loop>
+                <source src="img/geetsly.mp4" type="video/mp4" />
+              </video>
+            </a>
+          </div>
+
+          <div class="creationVideoCard">
+            <a
+              href="https://www.youtube.com/channel/UCNfGpi7cu6I3vGLUS77MygQ"
+              target="_blank"
+            >
+              <h3>RelaxJack</h3>
+              <video playsinline autoplay muted loop>
+                <source src="img/relaxJack.mp4" type="video/mp4" />
+              </video>
+            </a>
+          </div>
+
+          <div class="creationVideoCard">
+            <h3>The Braved (Coming Soon)</h3>
+            <img src="img/theBravedComingSoon-01.png" />
+          </div>
+
+          <div class="creationVideoCard">
+            <h3>Live Video</h3>
+            <video playsinline autoplay muted loop>
+              <source src="img/irlFootage.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <div class="creationVideoCard">
+            <h3>Drone Shots</h3>
+            <video playsinline autoplay muted loop>
+              <source src="img/droneFootage.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contactUs">
+      <div class="container">
+        <h2>CONTACT US</h2>
+        <h3>INFORMATION</h3>
+        <p>
+          Like we said, our team is composed of talented creators from around
+          the world, so we can almost guarantee at least one of us is awake and
+          working! Please feel free to contact us via our company email.
+        </p>
+        <p id="question">We look forward to working with you!</p>
+
+        <div class="contactEmails">
+          <div
+            class="emailCard"
+            data-aos="fade-right"
+            data-aos-duration="1400"
+            data-aos-easing="ease-in-out"
+          >
+            <h3>Frontier Media</h3>
+            <p>admin@frontiermediaco.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <section class="footer">
+      <div class="container">
+        <h2>&copy;FRONTIER MEDIA, 2021</h2>
+        <a href="#">BACK TO TOP</a>
+      </div>
+    </section>
+
+    <!-- Script section -->
+    <!-- This is where you attach scripts. You generally want to put them at the bottom so that the page loads first and then the scripts run.-->
+    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-3.4.1.min.js"><\/script>'
+        );
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/odometer.js"></script>
+    <script src="js/odometerTrigger.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+      });
+    </script>
+  </body>
+</html>
