@@ -158,6 +158,10 @@ section.nav .logo {
   font-size: 1.5em;
   letter-spacing: 0.1em;
 }
+section.nav .logo a {
+  color: #ffffff;
+  text-decoration: none;
+}
 @media screen and (max-height: 450px) {
   section.nav .sidenav {
     padding-top: 15px;
