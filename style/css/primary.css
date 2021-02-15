@@ -241,6 +241,10 @@ section.welcomeStats {
   width: 100%;
   height: 50vh;
 }
+section.welcomeStats .statsSpacer {
+  display: block;
+  height: 62px;
+}
 section.welcomeStats .container {
   width: 100%;
   max-width: 1590px;
@@ -257,6 +261,7 @@ section.welcomeStats .container .statsContainer .statsCard {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 30%;
 }
 section.welcomeStats .container .odometer {
   font-size: 1.75em;
