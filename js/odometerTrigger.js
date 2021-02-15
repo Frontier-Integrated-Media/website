@@ -75,8 +75,11 @@ function odometerTrigger() {
   });
 }
 
+odometerTrigger();
+
 /** You don't need to mess with this */
-/** Calculate the distance to the odometer in order to trigger on scroll */
+/** Removed cuz section is now at the top, needs to trigger without scroll! */
+/** Calculate the distance to the odometer in order to trigger on scroll
 $(window).scroll(function () {
   var odometerTop = $("#subOdometer").offset().top,
     odometerHeight = $("#subOdometer").outerHeight(),
@@ -85,4 +88,4 @@ $(window).scroll(function () {
   if (windowScroll > odometerTop + odometerHeight - windowHeight) {
     odometerTrigger();
   }
-});
+});*/
