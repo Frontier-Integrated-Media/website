@@ -569,7 +569,7 @@ section.meetTheTeam .container .teamCards {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   max-width: 1590px;
 }
 section.meetTheTeam .container .teamCards .teamMember {
@@ -724,6 +724,7 @@ section.contactUs .container .contactEmails .emailCard p {
   }
   section.contactUs .container .contactEmails .emailCard p {
     align-self: flex-end;
+    width: 80vw;
   }
 }
 @media (min-width: 1024px) {
