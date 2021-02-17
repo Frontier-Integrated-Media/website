@@ -299,7 +299,20 @@ section {
         }
 
         @media (min-width: 1200px) {
+          font-size: 4em;
+        }
+
+        @media (min-width: 1375px) {
           font-size: 5em;
+        }
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container .statsContainer {
+        flex-direction: column;
+        .statsCard {
+          width: 80%;
         }
       }
     }
@@ -770,7 +783,6 @@ section {
             margin: 1vw;
             padding: 1vw;
             border-radius: 5px;
-            width: 40vw;
           }
         }
       }
@@ -780,17 +792,15 @@ section {
           font-size: 3em;
         }
         .contactEmails {
-          align-items: flex-end;
+          align-items: center;
           .emailCard {
             flex-direction: row;
             justify-content: center;
-
             h3 {
               font-size: 1.5em;
             }
             p {
-              align-self: flex-end;
-              width: 80vw;
+
             }
           }
         }

@@ -277,7 +277,20 @@ section.welcomeStats .container .odometer {
 }
 @media (min-width: 1200px) {
   section.welcomeStats .container .odometer {
+    font-size: 4em;
+  }
+}
+@media (min-width: 1375px) {
+  section.welcomeStats .container .odometer {
     font-size: 5em;
+  }
+}
+@media (max-width: 480px) {
+  section.welcomeStats .container .statsContainer {
+    flex-direction: column;
+  }
+  section.welcomeStats .container .statsContainer .statsCard {
+    width: 80%;
   }
 }
 section.whatWeDo {
@@ -706,14 +719,13 @@ section.contactUs .container .contactEmails .emailCard p {
   margin: 1vw;
   padding: 1vw;
   border-radius: 5px;
-  width: 40vw;
 }
 @media (min-width: 768px) {
   section.contactUs .container h2 {
     font-size: 3em;
   }
   section.contactUs .container .contactEmails {
-    align-items: flex-end;
+    align-items: center;
   }
   section.contactUs .container .contactEmails .emailCard {
     flex-direction: row;
@@ -721,10 +733,6 @@ section.contactUs .container .contactEmails .emailCard p {
   }
   section.contactUs .container .contactEmails .emailCard h3 {
     font-size: 1.5em;
-  }
-  section.contactUs .container .contactEmails .emailCard p {
-    align-self: flex-end;
-    width: 80vw;
   }
 }
 @media (min-width: 1024px) {
