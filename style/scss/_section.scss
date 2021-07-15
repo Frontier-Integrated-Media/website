@@ -119,6 +119,34 @@ section {
       overflow-x: hidden;
       transition: 0.5s;
       padding-top: 60px;
+
+      .dropdown {
+        overflow: hidden;
+
+        .dropbtn { 
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+          text-decoration: none;
+          border: none;
+          outline: none;
+          background-color: inherit;
+
+          &:hover {
+            color: #f1f1f1;
+          }
+        }
+
+        .navSideDrop {
+          display: none;
+          position: relative;
+          left: 20px;
+          transition: 0.3s;
+        }
+      }
     }
 
     .sideNav a {
@@ -180,6 +208,50 @@ section {
           padding: 20px;
           font-family: "Ubuntu", sans-serif;
           font-weight: 400;
+          border-bottom : solid transparent 2px;
+
+          &:hover {
+            border-bottom : solid red 2px;
+          }
+        }
+        .dropdown {
+          overflow: hidden;
+
+          .dropbtn {          
+            color: white;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            background-color: inherit;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            padding: 22px 20px;
+            overflow: hidden;
+            border-bottom : solid transparent 2px;
+          }
+          .navFullDrop {
+            display: none;
+            background: rgb(34, 34, 34);
+            background: linear-gradient(
+              82deg,
+              rgba(34, 34, 34, 1) 0%,
+              rgba(18, 18, 18, 1) 100%
+            );
+            position: absolute;
+            z-index: 2;
+
+            a {
+              float: none;
+              display: block;
+              padding: 20px;
+            }
+          }
+
+          &:hover {
+            .navFullDrop {
+              display: block;
+            }
+          }
         }
       }
 
@@ -428,12 +500,8 @@ section {
     align-items: center;
     height: auto;
     text-align: center;
-    background: linear-gradient(
-      82deg,
-      rgba(34, 34, 34, 1) 0%,
-      rgba(18, 18, 18, 1) 100%
-    );
-    background-position: top;
+    background-image: url(../../img/whoWeAre_screen.jpg);
+    background-position: center;
     background-size: cover;
 
     .container {

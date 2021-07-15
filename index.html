@@ -24,7 +24,7 @@
       <div class="container">
         <!-- Side Nav -->
         <div id="mySideNav" class="sideNav">
-          <!-- The "onclick" is a javascript activiation. It closes the mobile side nav. -->
+          <!-- The "onclick" is a javascript activation. It closes the mobile side nav. -->
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
             >&times;</a
           >
@@ -34,7 +34,15 @@
             <a href="https://frontier-integrated-media.github.io/website#services" onclick="closeNav()">SERVICES</a>
             <a href="https://frontier-integrated-media.github.io/website#team" onclick="closeNav()">TEAM</a>
             <a href="https://frontier-integrated-media.github.io/website#contact" onclick="closeNav()">CONTACT</a>
-            <a href="https://frontier-integrated-media.github.io/website/creative.html" onclick="closeNav()">CREATIVE</a>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="toggleSideDrop()">BLOGS</button>
+              <div id="mySideDrop" class="navSideDrop">
+                <a href="https://geetslys.frontiermediaco.com" onclick="closeNav()">GEETSLY'S</a>
+                <a href="https://thefront.frontiermediaco.com" onclick="closeNav()">THE FRONT</a>
+                <a href="https://geetslys.frontiermediaco.com" onclick="closeNav()">THE BRAVED</a>
+              </div>
+            </div>
+            <a href="https://store.frontiermediaco.com">STORE</a>
           </div>
         </div>
 
@@ -46,8 +54,17 @@
           <a href="https://frontier-integrated-media.github.io/website#services">SERVICES</a>
           <a href="https://frontier-integrated-media.github.io/website#team">TEAM</a>
           <a href="https://frontier-integrated-media.github.io/website#contact">CONTACT</a>
-          <a href="https://frontier-integrated-media.github.io/website/creative.html">CREATIVE</a>
+          <div class="dropdown">
+            <button class="dropbtn">BLOGS</button>
+            <div class="navFullDrop">
+              <a href="https://geetslys.frontiermediaco.com">GEETSLY'S</a>
+              <a href="https://thefront.frontiermediaco.com">THE FRONT</a>
+              <a href="https://geetslys.frontiermediaco.com">THE BRAVED</a>
+            </div>
+          </div>
+          <a href="https://store.frontiermediaco.com">STORE</a>
         </div>
+
         <span
           class="openNavbtn"
           style="font-size: 30px; cursor: pointer"
@@ -98,40 +115,115 @@
       </div>
     </section>
 
+    <!-- STATS SECTION -->
+    <section class="welcomeStats">
+      <div class="container">
+        <!--h2>Frontier Media Creative</h2-->
+        <div class="statsSpacer"></div>
+        <div class="statsContainer">
+          <div class="statsCard">
+            <h3 id="channelOdometer" class="odometer">0</h3>
+            <p>CHANNELS</p>
+          </div>
+          <div class="statsCard">
+            <h3 id="viewOdometer" class="odometer">000,000,000</h3>
+            <p>VIEWS</p>
+          </div>
+          <div class="statsCard">
+            <h3 id="subOdometer" class="odometer">000,000</h3>
+            <p>SUBSCRIBERS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR CREATIONS SECTION -->
+    <section class="ourCreations">
+      <div class="container">
+        <h2>OUR CREATIONS</h2>
+
+        <div class="creationVideos">
+          <div class="creationVideoCard">
+            <a
+              href="https://www.youtube.com/channel/UCFHhnyA9HGtBxGhtMQ_FEpQ"
+              target="_blank"
+            >
+              <h3>The Front</h3>
+              <video playsinline autoplay muted loop>
+                <source src="img/theFront-smaller.mp4" type="video/mp4" />
+              </video>
+            </a>
+          </div>
+
+          <div class="creationVideoCard">
+            <a
+              href="https://www.youtube.com/channel/UC8gT5G2ktLGoHlLm33EwOsA"
+              target="_blank"
+            >
+              <h3>Geetsly's</h3>
+              <video playsinline autoplay muted loop>
+                <source src="img/geetsly-smaller.mp4" type="video/mp4" />
+              </video>
+            </a>
+          </div>
+
+          <div class="creationVideoCard">
+            <a
+              href="https://www.youtube.com/channel/UCNfGpi7cu6I3vGLUS77MygQ"
+              target="_blank"
+            >
+              <h3>RelaxJack</h3>
+              <video playsinline autoplay muted loop>
+                <source src="img/relaxJack-smaller.mp4" type="video/mp4" />
+              </video>
+            </a>
+          </div>
+
+          <div class="creationVideoCard">
+            <a
+              href="https://www.youtube.com/channel/UCXMGMrypItN1a1seNlydqng"
+              target="_blank"
+            >
+              <h3>The Braved</h3>
+              <video playsinline autoplay muted loop>
+                <source src="img/theBraved-smaller.mp4" type="video/mp4" />
+              </video>
+            </a>
+          </div>
+
+          <div class="creationVideoCard">
+            <h3>Live Video</h3>
+            <video playsinline autoplay muted loop>
+              <source src="img/irlFootage-smaller.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <div class="creationVideoCard">
+            <h3>Drone Shots</h3>
+            <video playsinline autoplay muted loop>
+              <source src="img/droneFootage-smaller.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- THE PROCESS SECTION -->
     <section id="process" class="theProcess">
       <div class="container">
         <h2>THE PROCESS</h2>
         <p>
-          You may require a specific, individual service — such as scriptwriting or graphic design — 
-          or an all-inclusive video in which we take your idea and bring it to life through any 
-          combination of motion graphics, live video, narration, music, and sound effects.
+          You may require a specific, individual service — such as scriptwriting or graphic design —
+          or an all-inclusive video in which we take your idea and bring it to life through any combination
+          of motion graphics, live video, narration, music, and sound effects.
         </p>
         <p>
-          Either way, the process begins with personalised correspondence, through which we'll 
-          come to see your vision just as you do. Once your idea is clear to us, we'll then produce 
-          a draft — whether that be an individual script, individual graphic, or an all-inclusive 
-          video — and share it with you so you can guide us with the finishing touches.
-        </p>
-        <p>
-          Part of the process is defining your budget, and to make that easier, we've created two 
-          motion graphic video examples, one on a medium budget, and another on a larger budget. 
-          This way, you can see precisely what your dollars will get you.
+          Either way, the process begins with personalised correspondence, through which we'll come to see your
+          vision just as you do, and establish a budget. Once your idea is clear to us, we'll then produce a draft
+          — whether that be an individual script, individual graphic, or an all-inclusive video — 
+          and share it with you so you can guide us with the finishing touches.
         </p>
         <div class="exampleCards">
-          <div
-            class="exampleCard"
-            data-aos="flip-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in"
-          >
-            <div class="exampleText">
-              <h3>MEDIUM BUDGET EXAMPLE</h3>
-            </div>
-            <div class="image">
-              <img src="img/comingsoon.jpg" alt="" />
-            </div>            
-          </div>
           <div
             class="exampleCard"
             data-aos="flip-up"
@@ -139,7 +231,7 @@
             data-aos-easing="ease-in"
           >
             <div class="exampleText">
-              <h3>LARGE BUDGET EXAMPLE</h3>
+              <h3>SAMPLE VIDEO</h3>
             </div>
             <div class="image">
               <img src="img/comingsoon.jpg" alt="" />
@@ -307,7 +399,7 @@
             data-aos-easing="ease-in-out"
           >
             <div class="image">
-              <img src="img/brad.jpeg" alt="" />
+              <img src="img/brad.jpg" alt="" />
               <p class="shortBio"></p>
             </div>
             <div class="teamTxt">
@@ -482,7 +574,7 @@
       </div>
     </section>
 
-    <!-- Script section -->
+    <!-- SCRIPT SECTION -->
     <!-- This is where you attach scripts. You generally want to put them at the bottom so that the page loads first and then the scripts run.-->
     <script src="js/vendor/modernizr-3.8.0.min.js"></script>
     <script
@@ -498,6 +590,8 @@
     </script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/odometer.js"></script>
+    <script src="js/odometerTrigger.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
