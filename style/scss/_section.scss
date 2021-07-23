@@ -286,6 +286,11 @@ section {
     height: 100vh;
     text-align: center;
 
+    @media (max-width: 640px) {
+      height: auto;
+      padding: 50px 0px;
+    }
+
     .container {
       padding: 5vw;
       h2 {
@@ -329,9 +334,25 @@ section {
     width: 100%;
     height: 50vh;
 
+    @media (max-width: 720px) {
+      height: auto;
+      padding: 50px 0px;
+    }
+
+    @media (max-width: 480px) {
+      height: auto;
+      padding: 50px 0px;
+    }
+
     .statsSpacer {
       display: block;
       height: 62px;
+      @media (max-width: 1366px) {
+        height: 32px;
+      }
+      @media (max-width: 480px) {
+        display: none;
+      }
     }
     .container {
       width: 100%;
@@ -367,6 +388,10 @@ section {
           0 15px 0 #121212;
 
         @media (min-width: 768px) {
+          font-size: 2.8em;
+        }
+
+        @media (min-width: 1024px) {
           font-size: 3em;
         }
 
@@ -398,6 +423,11 @@ section {
     align-items: center;
     height: auto;
     text-align: center;
+
+    @media (max-width: 640px) {
+      padding: 50px 0px;
+    }
+
     .container {
       align-content: center;
       color: rgba(18, 18, 18, 1);
@@ -504,6 +534,11 @@ section {
     background-position: center;
     background-size: cover;
 
+    @media (max-width: 640px) {
+      height: auto;
+      padding: 50px 0px;
+    }
+
     .container {
       align-content: center;
       margin: 5vw;
@@ -599,6 +634,10 @@ section {
     background-position: top;
     background-size: cover;
 
+    @media (max-width: 640px) {
+      padding: 50px 0px;
+    }
+
     .container {
       align-content: center;
       max-width: $containerFixedW;
@@ -622,6 +661,10 @@ section {
         justify-content: center;
         width: 100%;
 
+        @media (max-width: 640px) {
+          justify-content: space-around;
+        }
+
         .creationVideoCard {
           a {
             text-decoration: none;
@@ -636,6 +679,10 @@ section {
           img {
             margin-top: 1vw;
             width: 75%;
+          }
+          @media (max-width: 640px) {
+            padding: 10px 0;
+            width: 50%;
           }
         }
       }
@@ -657,6 +704,10 @@ section {
     );
     background-position: top;
     background-size: cover;
+
+    @media (max-width: 640px) {
+      padding: 50px 0px;
+    }
 
     .container {
       align-content: center;
@@ -806,6 +857,11 @@ section {
       align-items: center;
       text-align: center;
 
+      @media (max-width: 480px) {
+        height: auto;
+        padding: 50px 0px;
+      }
+
       h2 {
         color: #2c2c2c;
         letter-spacing: 0.05em;
@@ -915,6 +971,12 @@ section {
       rgba(38, 38, 38, 1) 100%
     );
     height: 10vh;
+
+    @media (max-width: 480px) {
+      height: auto;
+      padding: 20px 0px;
+    }
+
     .container {
       h2 {
         font-family: "Ubuntu", sans-serif;
