@@ -891,22 +891,45 @@ section {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
 
         .emailCard {
           display: flex;
-          flex-direction: column;
-          justify-content: center;
+          width: 100%;
+          flex-direction: row;
+          justify-content: flex-start;
           align-items: center;
 
           h3 {
             font-size: 1.25em;
+            line-height: 1.5em;
+            margin: 0.5em;
+            text-align: left;
           }
           p {
-            text-align: center;
+            font-size: 1em;
+            line-height: 1.5em;
             color: #2c2c2c;
-            margin: 1vw;
-            padding: 1vw;
-            border-radius: 5px;
+            margin: 0.5em;
+            text-align: left;
+          }
+
+          @media (max-width : 480px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0.5em 0;
+            h3 {
+              font-size: 1.25em;
+              line-height: 1.25em;
+              margin: 0.25em;
+              text-align: center;
+            }
+            p {
+              font-size: 1em;
+              line-height: 1.25em;
+              margin: 0.25em;
+              text-align: center;
+            }
           }
         }
       }
@@ -915,40 +938,11 @@ section {
         h2 {
           font-size: 3em;
         }
-        .contactEmails {
-          align-items: center;
-          .emailCard {
-            flex-direction: row;
-            justify-content: center;
-            h3 {
-              font-size: 1.5em;
-            }
-          }
-        }
       }
 
       @media (min-width: 1024px) {
         h2 {
           font-size: 4em;
-        }
-        .contactEmails {
-          flex-direction: row;
-          flex-wrap: wrap;
-          .emailCard {
-            width: 30vw;
-            max-width: 40vw;
-            flex-direction: row;
-            justify-content: flex-end;
-            h3 {
-              font-size: 1em;
-            }
-
-            p {
-              font-size: 1em;
-              padding: 1vw;
-              width: 15vw;
-            }
-          }
         }
       }
     }

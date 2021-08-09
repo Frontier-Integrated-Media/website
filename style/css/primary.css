@@ -832,59 +832,55 @@ section.contactUs .container .contactEmails {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 section.contactUs .container .contactEmails .emailCard {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
 }
 section.contactUs .container .contactEmails .emailCard h3 {
   font-size: 1.25em;
+  line-height: 1.5em;
+  margin: 0.5em;
+  text-align: left;
 }
 section.contactUs .container .contactEmails .emailCard p {
-  text-align: center;
+  font-size: 1em;
+  line-height: 1.5em;
   color: #2c2c2c;
-  margin: 1vw;
-  padding: 1vw;
-  border-radius: 5px;
+  margin: 0.5em;
+  text-align: left;
+}
+@media (max-width: 480px) {
+  section.contactUs .container .contactEmails .emailCard {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.5em 0;
+  }
+  section.contactUs .container .contactEmails .emailCard h3 {
+    font-size: 1.25em;
+    line-height: 1.25em;
+    margin: 0.25em;
+    text-align: center;
+  }
+  section.contactUs .container .contactEmails .emailCard p {
+    font-size: 1em;
+    line-height: 1.25em;
+    margin: 0.25em;
+    text-align: center;
+  }
 }
 @media (min-width: 768px) {
   section.contactUs .container h2 {
     font-size: 3em;
   }
-  section.contactUs .container .contactEmails {
-    align-items: center;
-  }
-  section.contactUs .container .contactEmails .emailCard {
-    flex-direction: row;
-    justify-content: center;
-  }
-  section.contactUs .container .contactEmails .emailCard h3 {
-    font-size: 1.5em;
-  }
 }
 @media (min-width: 1024px) {
   section.contactUs .container h2 {
     font-size: 4em;
-  }
-  section.contactUs .container .contactEmails {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  section.contactUs .container .contactEmails .emailCard {
-    width: 30vw;
-    max-width: 40vw;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-  section.contactUs .container .contactEmails .emailCard h3 {
-    font-size: 1em;
-  }
-  section.contactUs .container .contactEmails .emailCard p {
-    font-size: 1em;
-    padding: 1vw;
-    width: 15vw;
   }
 }
 section.footer {
