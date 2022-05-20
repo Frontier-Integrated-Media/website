@@ -898,6 +898,18 @@ section {
         align-items: center;
         flex-wrap: wrap;
 
+        .linkCard {
+          display: flex;
+          width: 80%;
+          max-width: 120px;
+          flex-direction: row;
+          justify-content: space-around;
+          padding-bottom: 20px;
+          a img {
+            width: 100%;
+          }
+        }
+
         .emailCard {
           display: flex;
           width: 100%;
