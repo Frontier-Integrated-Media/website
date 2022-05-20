@@ -447,13 +447,16 @@ section {
         }
       }
 
-      p {
-        font-size: 1em;
-        @media (min-width: 768px) {
-          font-size: 1.5em;
-        }
-        @media (min-width: 1000px) {
-          font-size: 1.5em;
+      #whatWeDoCard {
+        p {
+          padding: 0vw 12vw 5vw 12vw;
+          font-size: 1em;
+          @media (min-width: 768px) {
+            font-size: 1.5em;
+          }
+          @media (min-width: 1000px) {
+            font-size: 1.5em;
+          }
         }
       }
 
@@ -626,11 +629,7 @@ section {
     align-items: center;
     height: auto;
     text-align: center;
-    background: linear-gradient(
-      82deg,
-      rgba(34, 34, 34, 1) 0%,
-      rgba(18, 18, 18, 1) 100%
-    );
+    background-image: url(../../img/whoWeAre_screen.jpg);
     background-position: top;
     background-size: cover;
 
@@ -674,15 +673,21 @@ section {
           width: 40%;
           video {
             margin-top: 1vw;
-            width: 75%;
+            width: 100%;
           }
           img {
             margin-top: 1vw;
-            width: 75%;
+            width: 100%;
+          }
+          p {
+            font-size: 1em;
           }
           @media (max-width: 640px) {
             padding: 10px 0;
-            width: 50%;
+            width: 90%;
+            p {
+              font-size: 0.9em;
+            }
           }
         }
       }
